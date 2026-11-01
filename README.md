@@ -7,3 +7,5 @@ A small browser game: fling firebolts and fireballs, survive the waves, and grow
 Controls: left click to cast Firebolt, right click or Space for Fireball, Q for Frost Nova and E for Ward once unlocked, T to open the spell tree.
 
 It's one self-contained HTML file with no install and no tracking.
+
+Fan parody, not affiliated with or endorsed by Mattel or the Barney franchise. Free, non-commercial.

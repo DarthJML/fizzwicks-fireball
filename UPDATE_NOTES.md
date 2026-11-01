@@ -1,10 +1,10 @@
-# Scenery and Grapesaur — review notes
+# Scenery and Barney — review notes
 
 Branch: `scenery-boss` (local only; do not merge or push before Claude/user review).
 
 ## Changes
 - Generated a 64×64 nearest-neighbour, repeating grass/stone path texture at runtime from canvas pixels. The arena now has broken stone walls, an inner ruined ring, torches with flickering flames, banners, trees, mushrooms, low rocks and ground tufts. Backdrop/fog/ambient lighting shift at waves 5 and 9. All art stays in `index.html`; no fetches or extra assets.
-- Wave 10 spawns original pixel-sprite Grapesaur (lavender, orange, party hat, grin, tiny arms and broad feet), a boss HP bar and intro/defeat cards. Attacks: red-line HUG CHARGE, expanding STOMP ring (outrun; this game has no jump control), arcing SING-ALONG notes, and a half-health CONFETTI BLAST spread. Boss health: 210; defeat awards 2500 points, confetti, then normal wave-clear draft and wave 11. Boss sting/hit/dash/explosion one-shots come from `game_sfx` (seed 113, CC0), compressed to MP3 and embedded as data URIs. Audio obeys browser gesture/autoplay policy.
+- Wave 10 spawns a hand-drawn pixel-sprite Barney fan parody (purple body, green belly and toes, round eyes, broad grin, stubby tail; no party hat), a boss HP bar and intro/defeat cards. Attacks: red-line HUG CHARGE, expanding STOMP ring (outrun; this game has no jump control), arcing generic musical notes, and a half-health CONFETTI BLAST spread. Boss health: 210; defeat awards 2500 points, confetti, then normal wave-clear draft and wave 11. Boss sting/hit/dash/explosion one-shots come from `game_sfx` (seed 113, CC0), compressed to MP3 and embedded as data URIs. No show-sourced art, audio, song, lyrics or melody. Audio obeys browser gesture/autoplay policy.
 - `.gitignore` excludes `dev-shots/` test screenshots.
 
 ## Exact minified search anchors touched
@@ -27,3 +27,7 @@ Each anchor below was unique before replacement. The engine was not formatted or
 - `game_playtest`: wave 1 and wave 10 at 480×480, both pass, no page errors, console errors or failed requests; average headless software-GL FPS ~60 wave 1 and ~57 boss. Screenshots: `dev-shots/arena-final/01_soak1.png`, `dev-shots/wave10-final/00_boot.png`, `dev-shots/mid-boss-fight.png`, `dev-shots/boss-victory.png`. T tree was opened in wave-1 playtest; interactive Chromium boss test followed auto-aim until victory at ~80 seconds and selected a draft card, advancing to wave 11; tree opened and closed afterwards.
 - File size: `index.html` 4,978,950 bytes before, 5,011,760 bytes after. No external requests added. X metadata unchanged.
 - Not verified: actual laptop GPU frame rate; sustained difficulty/balance with a natural nine-wave upgrade build; mobile touch controls; audio playback in a user-gesture-enabled browser (headless autoplay policy may mute). The boss's 60–90 second target was exercised with unupgraded auto-fire in invulnerable test mode, not a natural run.
+
+## Barney parody follow-up (2026-11-01)
+- User accepted trademark risk for this free, non-commercial fan game and will remove it if requested. Renamed the boss's visible labels, intro, defeat card and registry name to Barney; sprite now has a purple silhouette, green belly and toe pads, round eyes, a wide grin and short tail, with no party hat. Generic `game_sfx` notes and original art/audio remain; no show music, lyrics, melody, audio or images. README carries the fan-parody disclaimer.
+- `game_playtest` on `index.html?wave=10&god`, 480×480: pass on two runs; no page/console errors or failed requests, screen changed. Screenshots in `dev-shots/barney-wave10/` (boot, intro, fight) and `dev-shots/barney-close/` (approach and attack). The approach/attack captures show the purple body, green belly, eyes and grin in-frame. Headless software-GL FPS is not a laptop GPU benchmark. The new defeat card was checked in source, not replayed to victory in these runs.
