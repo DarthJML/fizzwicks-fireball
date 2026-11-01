@@ -4,7 +4,9 @@ A small browser game: fling firebolts and fireballs, survive the waves, and grow
 
 **Play:** https://poptartsmmmgood117-bit.github.io/fizzwicks-fireball/
 
-Controls: left click to cast Firebolt, right click or Space for Fireball, Q for Frost Nova and E for Ward once unlocked, T to open the spell tree.
+Controls (desktop): WASD or arrow keys move; mouse aims; hold left click to auto-fire Firebolt; right click or Space casts Fireball; Q casts Frost Nova and E casts Ward once unlocked; T opens the spell tree; 1/2/3 choose draft cards.
+
+Controls (phone / X player card): Touch the left half and drag the floating joystick to move. Tap the right half to aim and fire a Firebolt, or hold and drag to auto-fire. Move and fire with two fingers. Use the round FIREBALL button (and FROST NOVA / WARD buttons once unlocked); their rings show cooldown. Tap ✦ at top-right for the spell tree; tap a draft card to choose it.
 
 It's one self-contained HTML file with no install and no tracking.
 
