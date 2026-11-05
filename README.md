@@ -2,7 +2,7 @@
 
 A small browser game: fling firebolts and fireballs, survive the waves, and grow your spell constellation between waves.
 
-**Play:** https://poptartsmmmgood117-bit.github.io/fizzwicks-fireball/
+**Play:** https://darthjml.github.io/fizzwicks-fireball/
 
 Controls (desktop): WASD or arrow keys move; mouse aims; hold left click to auto-fire Firebolt; right click or Space casts Fireball; Q casts Frost Nova and E casts Ward once unlocked; T opens the spell tree; 1/2/3 choose draft cards; M cycles sound modes (All → SFX only → Muted).
 
